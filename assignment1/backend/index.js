@@ -7,6 +7,7 @@ const { connenction } = require('./config/db');
 const addDataRouter = require('./routes/addData.route');
 const { data1Model } = require('./model/data1.model');
 const { data2Model } = require('./model/data2.model');
+const { fetchDataRouter } = require('./routes/fetchData.route');
 
 
 const app = express();
@@ -25,7 +26,7 @@ app.use(cors());
    return  res.send(result)
  })
 app.use("/add", addDataRouter);
-app.use('fetchdata',fetchDataRouter)
+app.use("/fetchdata", fetchDataRouter);
 
 
 
