@@ -27,6 +27,4 @@ const fetchData = async () => {
 const fetchDataBtn = document.getElementById("fetch-data-btn");
 fetchDataBtn.addEventListener("click", fetchData); // Trigger fetchData function when the button is clicked
 
-document.addEventListener("DOMContentLoaded", () => {
-  fetchData();
-});
+
