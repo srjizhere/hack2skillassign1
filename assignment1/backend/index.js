@@ -15,7 +15,8 @@ const port  = process.env.PORT || 8080;
 
 app.use(bodyParser.json());
 app.use(cors());
- connenction;
+ 
+
  app.get('/get1',async(req,res)=>{
    const result =  await data1Model.find().exec()
    console.log(result)
@@ -32,6 +33,7 @@ app.use("/fetchdata", fetchDataRouter);
 
 app.listen(port,async()=>{
     try {
+      await connection
         console.log("Connected to DB");
         
     } catch (error) {
