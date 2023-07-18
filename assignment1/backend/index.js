@@ -29,15 +29,13 @@ app.use(cors());
 app.use("/add", addDataRouter);
 app.use("/fetchdata", fetchDataRouter);
 
+( async()=>{
+await connection
+app.listen(port, async () => {
+  console.log(`App is running on port ${port}`);
+});
 
 
-app.listen(port,async()=>{
-    try {
-      await connection
-        console.log("Connected to DB");
-        
-    } catch (error) {
-        console.log('error while connecting to Db');
-    }
-    console.log(`App is running on port ${port}`);
-})
+})()
+
+
