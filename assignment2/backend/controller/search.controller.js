@@ -1,5 +1,5 @@
 const { model } = require("mongoose");
-const { Video } = require("../model/video.model");
+const {  VideoModel } = require("../model/video.model");
 
 
 const searchContoller = async (req, res) => {

@@ -1,7 +1,7 @@
 // app.js
 const fetchData = async () => {
   try {
-    const response = await fetch("http://localhost:8080/fetchdata");
+    const response = await fetch("https://wild-lime-gorilla-boot.cyclic.app/fetchdata");
     const data = await response.json();
 
     const tableBody = document.querySelector("#data-table tbody");
